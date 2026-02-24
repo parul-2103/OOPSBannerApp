@@ -1,27 +1,17 @@
-/**
- * OOPSBannerApp
- * UC4 - Prints "OOPS" banner using Array & Loop
- *
- * Improves UC3 by removing repetitive print statements
- * and using a String array with enhanced for-loop.
- *
- * @version 4.0
- */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String[] bannerLines = {
-            String.join("", " *****  ", " *****  ", " *****  ", " ***** "),
-            String.join("", "*     * ", "*     * ", "*     * ", "*     *"),
-            String.join("", "*     * ", "*     * ", "*     * ", "*     *"),
-            String.join("", "*     * ", "*     * ", "*     * ", "* *****"),
-            String.join("", "*     * ", "*     * ", "*     * ", "*     *"),
-            String.join("", "*     * ", "*     * ", "*     * ", "*     *"),
-            String.join("", " *****  ", " *****  ", " *****  ", " ***** ")
+        // UC5: Array declaration + initialization using String.join()
+        String[] banner = {
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"),
+                String.join("", "*", " ", "O", "O", "P", "S", " ", "B", "A", "N", "N", "E", "R", " ", "*"),
+                String.join("", "*", " ", "U", "C", "5", " ", "-", " ", "A", "R", "R", "A", "Y", " ", "*"),
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*")
         };
 
-        for (String line : bannerLines) {
+        // Display banner using enhanced for loop
+        for (String line : banner) {
             System.out.println(line);
         }
     }
